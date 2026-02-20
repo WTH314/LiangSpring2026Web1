@@ -1,0 +1,101 @@
+
+body{
+    background-color: #dfcce3;
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+nav{
+    background-color: #a67ab6;
+    padding: 5px;
+    text-align: center;
+     font-family: "Zen Dots", sans-serif;
+}
+
+header{
+    background-color: #a67ab6;
+    padding: 5px;
+}
+
+/* ID delector */
+#wrapper{
+    background-color: #a67ab6; 
+    width: 70%;
+    margin: 0px auto; 
+    /* top and bottom margin is 0, left and right margin is auto, which will center the element horizontally */
+}
+
+/* group selctor */
+h3,h4,h5{
+    margin: 0px;
+    margin-bottom: 10px;
+}
+
+/* html tag selecter */
+h1{
+    color: #574271; 
+   font-family: "Press Start 2P", system-ui;
+   font-style: normal;
+    font-size: 48px;
+    text-align: center;
+
+}
+
+/* decendant selector */
+header h2{
+    color: #f3e8fc;
+    font-family: "Tourney", sans-serif;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+main h2 {
+    color: #534160;
+    font-family: "Roboto Slab", serif;
+    text-align: center;
+
+}
+
+main h3{
+    margin-top: 30px;
+    color:#4f3064;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+
+main h4{
+    font-size: 20px;
+    text-align: center;
+}
+
+main h5{
+    font-size: 15px;
+    color: #574862;
+    font-family: "Press Start 2P", system-ui;
+    text-align: center;
+}
+
+main a {
+    color: hsl(0, 23%, 95%);
+    text-decoration: none;
+    font-family: "Press Start 2P", system-ui;
+}
+
+/* pseudo class selector */
+main a:hover {
+    color: hsl(0, 23%, 80%);
+}  
+
+main{
+    padding: 20px;
+}
+
+/*start footer style*/
+span.copyright{
+    color: hsl(300, 7%, 11%);
+}
+
+span.name{
+    color: hwb(270 97% 2%);
+}
+/*end footer style*/
