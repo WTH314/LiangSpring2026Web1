@@ -19,6 +19,9 @@ footer{
     float: none;
     clear: both;
 }
+header h2 {
+    font-size: 30px;
+}
 nav a{
     color: black;
     text-decoration: none;
