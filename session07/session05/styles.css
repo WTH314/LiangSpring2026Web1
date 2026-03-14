@@ -1,0 +1,72 @@
+body {
+    background-color:#7668A1;
+    background-image: url("images/scroll.jpeg");
+}
+#wrapper {
+    background-color:#E0D45A;
+    width: 70%;
+    margin: 0px auto;
+    
+}
+nav{
+    background-color: #E0D45A;
+    padding: 5px;
+    text-align: center;
+    font-family: "Almendra SC", serif;
+}
+h1{
+    color: #121115;
+    padding: 5%;
+    text-align: center;
+    font-family: "Almendra SC", serif;
+    
+}
+h2,h3,h4{
+    color: #121114;
+    font-family: "Almendra SC", serif;
+    text-align: center;
+}
+
+header,nav,main,footer {
+    padding: 20px;
+    border: 3px dashed #8B8866;
+}
+main h2 {
+    background-color: #9e9c86;
+    padding: 6px 0px;
+    border-bottom: 10px solid #625f6b;
+    color:#2f2c37;
+    /* value are clockwise */
+    margin: 60px 0px 0px 0px;
+
+}
+/* styling a div block element box */
+div.imageContainer {
+    background-color: #8B8866;
+    padding: 20px;
+    border: 11px solid #9e9c86;
+}
+
+/* styling a img inline element box */
+div.imageContainer img {
+width: 100px;
+height: 100px;
+    border: 11px solid #9e9c86;
+    margin: 22px;
+    padding: 40px;
+    background-color: #A35CB5;
+    background-image: url("images/scroll.jpeg");
+}
+footer a {
+    color: #7668A1;
+    text-decoration: none;
+    margin: 10px;
+    text-align: center;
+    font-family: "Almendra SC", serif;
+}
+
+/* pseudo class selector */
+footer a:hover {
+    color: #A35CB5;
+
+}  

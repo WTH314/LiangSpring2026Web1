@@ -1,0 +1,118 @@
+div.galleryItem {
+    background-color: #574BF2;
+    float: left;
+    width: 300px;
+    height: 300px;
+    border: 1px darkblue dashed;
+}
+div.galleryItem img{
+    width: 100%;
+    height: 200px; 
+      
+}
+div.galleryItem{ 
+    text-align: center;
+    color: lightgreen;
+}
+footer{
+    background-color:#537BF5;
+    float: none;
+    clear: both;
+}
+nav a{
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    text-align: center;
+    font-family: "Rampart One", sans-serif;
+}
+body {
+    background-color:#7668A1;
+    background-image: url("images/pur.jpeg");
+}
+#wrapper {
+    background-color:#ae89e4;
+    width: 70%;
+    margin: 0px auto;
+    
+}
+nav{
+    background-color: #BE9CF2;
+    padding: 5px;
+    text-align: center;
+    font-family: "Bitcount Prop Single", system-ui;
+}
+h1{
+    color: #121115;
+    padding: 5%;
+    text-align: center;
+    font-family: "Workbench", sans-serif;
+    font-size: 50px;
+    
+}
+h2,h3,h4{
+    color: #121114;
+    font-family: "Bitcount Prop Single", system-ui;
+    text-align: center;
+    
+}
+
+header,nav,main,footer {
+    border: 3px dashed #BE9CF2;
+
+}
+header h2 {
+    font-size: 30px;
+}
+main h2 {
+    background-color: #F551E4;
+    padding: 7px 0px;
+    border-bottom: 10px solid #8E4BF2;
+    color:#2f2c37;
+    /* value are clockwise */
+    margin: 60px 0px 0px 0px;
+    
+
+
+}
+main h3 {
+    background-color: #F551E4;
+    padding: 7px 0px;
+    border-bottom: 10px solid #8E4BF2;
+    color:#2f2c37;
+    /* value are clockwise */
+    margin: 20px 0px 0px 0px;
+}
+
+/* styling a img inline element box */
+footer a {
+    color: black;
+    text-decoration: none;
+    margin: 5px;
+    text-align: center;
+    font-family: "Rampart One", sans-serif;
+}
+
+/* pseudo class selector */
+footer a:hover {
+    color: white;
+
+}  
+nav a:hover {
+    color: #8E4BF2;
+
+} 
+ nav.button {
+    background-color: #8E4BF2;
+    color: blueviolet;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-flex;
+    font-size: 16px;
+    margin: 4px 2px;
+    cursor: pointer;
+    font-family: "Rampart One", sans-serif;
+}
+

@@ -1,0 +1,107 @@
+/* START border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+/* asterisk (*) symbol represents the universal selector. Its primary function is to select all elements of any type within the document. */
+
+/* :before is a pseudo-element used to insert content before the actual content of a selected element. It creates a "virtual" first child within the element, allowing you to style and add content that isn't directly present in your HTML markup. */
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+/* END border-box fix */
+body {
+  background-color: hwb(281 69% 2%);
+  background-image: url("images/pur.jpeg");
+}
+/* flex parent */
+.container {
+    background-color: #878787;
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1000px;
+}
+/* flex childer */
+header {
+  background-color:hwb(268 10% 47%) ;
+  order: 1;
+  flex: 1 0 100%; 
+  /*make the header take up the full width of the container and not shrink or grow */ 
+  text-align: center;
+
+}
+main {
+  background-color:hsl(277, 40%, 62%);
+  order: 3;
+  flex: 1 1 500px;
+}
+/* display nav higher on page but letting the htmml be lower for acccessibility  */
+nav {
+  background-color: hsl(297, 30%, 48%) ;
+  order: 2;
+  flex: 1 0 200px;
+}
+aside {
+  background-color:oklch(63.054% 0.11526 300.708);
+    order: 4;
+    flex: 1 0 200px;
+    /* first number is grow the second number is shrink */
+}
+footer {
+  background-color:lab(31.74% 37.87 -39.22) ;
+    order: 5;
+    flex: 1 0 100%; 
+}
+article h3{
+    color: #121114;
+    font-family: "Tourney", serif;
+    text-align: center;
+    
+}
+a:hover {
+    color: hsl(264, 10%, 90%);
+}
+header,nav,main,footer,aside{
+    border: 3px double hwb(263 92% 5%);
+
+}
+a{
+    text-decoration: none;
+    color: rgb(9, 185, 244);
+    font-family: "Orbitron", sans-serif;
+}
+p{
+    color: #121114;
+    font-family: 'Times New Roman', Times, serif;
+    text-align: center;
+}
+main h2{
+    color: hsl(260, 30%, 31%);
+    font-family: "Vast Shadow", serif;
+    text-align: center;
+    background-color: hwb(273 32% 4%);
+    padding: 8px 0px;
+    border-bottom: 10px solid lab(39.78% 27.61 -30.65);
+    /* value are clockwise */
+    margin: 20px 20px 20px 20px;
+}
+header h1, header h2{
+    color: oklab(72.527% 0.0623 -0.11512);
+    font-family: "Orbitron", sans-serif;
+    text-align: center;
+}
+aside h2{
+    color: lab(30.9% 68.5 -94.89);
+    font-family: "Vast Shadow", serif;
+    text-align: center;
+}
+b{
+    color: oklab(45.641999999999996% -0.00503 -0.16639);
+}
+
+footer p{
+    color: hsl(0, 0%, 95%);
+}
