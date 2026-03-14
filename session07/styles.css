@@ -17,12 +17,24 @@ body {
   background-color: hwb(281 69% 2%);
   background-image: url("images/pur.jpeg");
 }
+.container>* {
+    padding: 20px;
+}
 /* flex parent */
 .container {
     background-color: #878787;
     display: flex;
     flex-wrap: wrap;
     max-width: 1000px;
+    margin:0px auto;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    text-transform: uppercase;
 }
 /* flex childer */
 header {
