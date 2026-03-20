@@ -1,0 +1,162 @@
+/* BEGIN border-box fix */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+/* END border-box fix */
+body {
+    /* remove margin and padding on body */
+    padding: 0;
+    /* margin: 0; */
+    background-color: rgb(179, 179, 179);
+    background-image: url("images/pur.jpeg");
+}
+/* Grouping example */
+h1,
+h2,
+h3,
+h4,
+h5 {
+  text-transform: uppercase;
+  text-align: center;
+}
+.wrapper {
+    background: rgb(168, 221, 102);
+    /* grid layout parent */
+    display: grid;
+    /* create 12 col layout */
+    grid-template-columns: repeat(12, minmax(0, 1fr));
+    width: 80%;
+    margin: 0 auto;
+}
+/* padding on immediate children of wrapper */
+.wrapper>* {
+  padding: 20px;
+}
+
+header {
+    background-color: hwb(282 29% 4%);
+    grid-column: 1 / 13;
+    font-family: "Bungee Shade", sans-serif;
+    
+}
+main h2, h3{
+    color: hsl(246, 73%, 45%);
+    font-family: "Fredericka the Great", serif;
+}
+nav {
+    background-color: oklch(67.94% 0.16531 299.551);
+    grid-column: 1 / 4;
+}
+
+main {
+    background-color: hwb(266 79% 5%);
+    grid-column: 4 / 10;
+}
+
+aside {
+    background-color: rgb(151, 115, 187);
+    grid-column: 10 / 13;
+}
+a{
+    text-decoration: none;
+    color: #c137c3;
+    font-family: "Orbitron", sans-serif;
+}
+a:hover {
+    color: hwb(220 17% 13%);
+}
+
+footer {
+    background-color: #7300ff;
+    grid-column: 1 / 13;
+}
+/* span 2 rows */
+main,
+nav,
+aside {
+  grid-row: 2 / 4;
+}
+
+main p{
+    color: hsl(176, 100%, 51%);
+    text-align: center;
+    background-color: hwb(273 51% 15%);
+    padding: 10px 0px;
+    border-bottom: 10px solid lab(39.78% 27.61 -30.65);
+    border-radius: 25px 18px 25px 18px;
+}
+
+aside p{
+    color: hsl(176, 100%, 51%);
+    text-align: center;
+    background-color: hwb(273 51% 15%);
+    padding: 10px 0px;
+    border-bottom: 10px solid lab(39.78% 27.61 -30.65);
+    border-radius: 25px 18px 25px 18px;
+}
+
+
+div.galleryItem img{
+    width: 100%;
+    height: 150px;
+    object-position: center;  /* Centers the image within the box */
+    border-bottom: 10px solid lab(39.78% 27.61 -30.65);
+    border-radius: 25px 18px 25px 18px;
+    
+}
+ main a {
+    font-family: "Vast Shadow", serif;
+ }     
+
+div.galleryItem{ 
+    text-align: center;
+    color: lightgreen;
+}
+footer p{
+    color: hsl(0, 0%, 95%);
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+nav ul li{
+    margin: 0;
+}
+
+nav ul li a {
+    display: block;
+    padding: 10px 18px;
+    border: 1px solid #f3eeee;
+    color: lab(89.99% -50.04 -6.96);
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+     border-radius: 15px 15px 15px 15px;
+}
+
+nav ul li a:hover {
+    background-color: lab(47.85% 68.95 3.2);
+    color: white;
+    border-color: #333;
+}
+nav h2 {
+    color: hsl(246, 73%, 45%);
+    font-family: "Vast Shadow", serif;
+}
+aside h2{
+    color: lab(91.17% 1.42 -2.8);
+    font-family: "Vast Shadow", serif;
+    text-align: center;
+}
