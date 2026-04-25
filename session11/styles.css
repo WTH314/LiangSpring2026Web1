@@ -2,6 +2,10 @@
 body {
 	font-family: helvetica, arial, sans-serif;
 	background-color:#EBC3A4;
+	min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
 }
 
 h1 {
@@ -59,4 +63,16 @@ h1 {
 	
 	
 }
-
+footer {
+    background-color: #f9cd53;
+    margin-left: 0px;
+    margin-top: auto; /* Pushes footer to the bottom */
+    margin-bottom: -40px;
+    padding: 1px;
+}
+footer p {
+	text-align: center;
+	color: #3a241d;
+	font-family: "Agu Display", serif;
+	margin: 0;
+}
