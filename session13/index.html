@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery and AJAX</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <h1>My idea </h1>
+    <div id="content">
+
+        <div id="flip">Click to see the theme </div>
+<div id="panel">The theme of my website is going to be about cooking food. Or making food. The website is going to have a photo of food or a drawing that we will have to see. Will have a page where you go to the grocery store to pick out the ingredients you need. On the other page, put the ingredient in the cooking pot or pan to make the food. The last page is going to be about placing the food on the table. I maybe can put another page about how much the ingredients cost to buy. I plan to only do 3 food recipes. Maybe do more if I think I need to add more. Maybe I can add another page where the user can click on the food, then it makes it look like you ate the food, then ask you for your rating on the dish you made. (I don’t know, it's just an idea, so we will have to see how much can I code up to)</div>
+
+
+
+        <button id="Font">Font Choices/ Colors</button>
+        <button id="Animated">Animated Elements</button>
+       
+
+
+        <div id="bioContainer">
+            <div id="theDiv">
+        </div>
+        
+
+        </div>
+
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+        
+    <script type="text/javascript">
+        $("document").ready(function () {
+            $("#Font").on("click", loadShortBio);
+            $("#Animated").on("click", loadLongBio);
+        });
+
+        function loadShortBio() {
+            $("#bioContainer").load("font.html");
+        }
+        function loadLongBio() {
+            $("#bioContainer").load("Animated.html");
+        }
+        
+        $("#toggle").on("click", function() {
+                $("#theDiv").slideToggle("slow", onToggleFinished);
+            });
+    </script>
+    <script> 
+    $(document).ready(function(){
+      $("#flip").click(function(){
+        $("#panel").slideToggle("fast"); // try "slow" 
+      });
+    });
+    </script>
+
+</body>
+
+</html>
+

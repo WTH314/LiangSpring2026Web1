@@ -1,0 +1,121 @@
+body {
+    font-family: "Open Sans", sans-serif;
+    font-size: 12pt;
+    margin: 0;
+    line-height: 1.2em;
+    background-color: lch(72.71% 22.42 270.88)
+}
+
+body > h1 {
+    background-color: hwb(62 6% 7%);
+    color: hsl(0, 59%, 6%);
+    font-family: "Gravitas One", serif;
+    font-weight: 100;
+    margin: 0 auto;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    padding-top:25pt;
+    padding-bottom: 15pt;
+    box-shadow: 0px 5px 5px 0px rgb(33, 20, 20);
+    text-align: center;
+}
+
+#content {
+    margin: 10pt;
+    font-family: "Instrument Serif", serif;
+}
+
+#example, #bioContainer {
+    border: 1px solid hsl(0, 78%, 2%);
+    background-color: hsl(25, 97%, 54%);
+    font-size:14pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    min-height: 200px;
+    box-shadow: 0px 5px 5px 0px rgb(33, 20, 20);
+}
+
+.box {
+    border: 1px solid gray;
+    background-color: #b3c8d0;
+    font-size:14pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    min-height: 200px;
+    width: 300px;
+   
+}
+
+.box p {
+    margin: 0 1pt 0 2pt
+}
+
+.smallbox {
+    border: 1px solid gray;
+    background-color: #b3c8d0;
+    font-size:14pt;
+    padding-left: 10pt;
+    padding-right: 10pt;
+    margin-bottom: 10pt;
+    margin-right: 0pt;
+    margin-left: 0pt;
+    min-height: 150px;
+    width: 200px;
+}
+
+.inline {
+    display: inline-block;
+}
+
+code {
+    background-color: #e8e8e8;
+    border: 1px solid #a8a8a8;
+    border-radius: 3px;
+    padding: 1pt 2pt;
+    margin: 2pt;
+    font-family: "source-code-pro", Consolas, monospace;
+    font-size: .9em;
+}
+
+li {
+    line-height: 1.3em;
+    margin-bottom: .3em;
+
+}
+
+button {
+    font-size: 14pt;
+    margin: 8px;
+    background-color: yellow;
+    font-family: "Instrument Serif", serif;
+    box-shadow: 0px 5px 5px 0px rgb(33, 20, 20);
+}
+
+#eventDetails {
+    border: 1px solid #0560EE;
+    margin-top: 8pt;
+    padding: 2pt;
+}
+
+.lineitem {
+    width: 120px;
+    display: inline-block
+}
+/* second part  */
+#panel, #flip {
+  padding: 5px;
+  text-align: center;
+  border: solid 1px #EDBD05;
+  background-color: #ED8105;
+  font-family: "Gravitas One", serif;
+  box-shadow: 0px 5px 5px 0px rgb(33, 20, 20);
+}
+
+#panel {
+  padding: 50px;
+  display: none;
+  background-color: #ED8105;
+  font-family: "Instrument Serif", serif;
+
+}
+ 
