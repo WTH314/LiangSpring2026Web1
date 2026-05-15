@@ -1,0 +1,154 @@
+
+    <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/p5@1.11.13/lib/p5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gravitas+One&family=Instrument+Serif:ital@0;1&family=Rubik+Doodle+Shadow&display=swap" rel="stylesheet">
+    <script src="sketch.js"></script>
+     <script src="script.js" defer></script>
+    
+    <link rel="stylesheet" href="style.css" />
+    <title>pasta Recipe</title>
+    <div id="p5-container"></div>
+
+    <div class="recipe-container">
+    <h1>pasta Recipe</h1>
+    
+    <img src="images/pasta.png" alt="pasta" class="recipe-image">
+
+<div class="toggle-buttons">
+        
+        <button class="toggle-btn" id="historyBtn">📜 History of Pasta</button>
+    </div>
+
+    <!-- History Panel -->
+    <div id="historyPanel" class="info-panel">
+        <h3>📖 History of Pasta</h3>
+        <div class="history-text">
+            <p>Pasta is a type of food made from durum wheat semolina or flour and water. It is a staple food in many countries and is often served with various sauces and toppings.</p>
+            
+            <p><strong>Origin:</strong> Pasta has its roots in Italy, where it was developed as a way to use up leftover flour. It later spread to other parts of the world, each adding their own twist.</p>
+            
+            <p><strong>Cultural Significance:</strong> Pasta is a beloved dish in many cultures and is often enjoyed as a main course or side dish. The name "pasta" literally means "dough" in Italian.</p>
+            
+            <p><strong>Modern Variations:</strong> Today, you can find many creative versions of pasta, from simple tomato sauce to more elaborate dishes with various ingredients and seasonings!</p>
+
+            <button class="source-btn" onclick="window.open('https://www.historyofspaghetti.com/', '_blank')">
+        Source & Citation
+    </button>
+
+        </div>
+    </div>
+    
+    
+    
+    
+    <h2>Ingredients:</h2>
+    <ul>
+        <li>1 pound ground beef, 80 percent lean/20 percent fat</li>
+        <li>2 cups hot water</li>
+        <li>2 cubes beef bouillion, or use 2 cups beef broth and omit hot water</li>
+        <li>1 (8-ounce) can tomato sauce</li>
+        <li>1 (6-ounce) can tomato paste</li>
+        <li>2 teaspoons sugar</li>
+        <li>½ teaspoon dried basil
+</li>
+        <li>½ teaspoon dried oregano</li>
+        <li>pinch of garlic powder.</li>
+        <li>salt and pepper, to taste</li>
+        <li>1 (16-ounce) package spaghetti</li>
+    </ul>
+    
+    <h2>Instructions:</h2>
+    <ol>
+        <li>Cook ground beef in a large pan over medium heat, breaking into small pieces, until browned, 8-10 minutes. Drain excess fat.</li>
+        <li>Dissolve bouillon cubes in hot water and add to meat. Add tomato sauce, tomato paste, sugar, basil, oregano, garlic powder, salt and pepper. Simmer on low for 30 minutes.</li>
+        <li>A few minutes before the sauce is done, cook spaghetti noodles according to package directions.</li>
+        <li>Drain spaghetti and add to the sauce, tossing to coat. Top with Parmesan.</li>
+    <h2>Notes: recipe tips</h2>
+        <li>If using dry herbs, add them at the beginning; add fresh herbs toward the end.</li>
+        <li>You can add 1 tablespoon of salt to the water before adding the pasta; this infuses flavor directly to the noodles. </li>
+        <li>To help balance the acidity in the sauce, add sugar or shredded carrots.</li>
+        <li>If you’re watching your carbs, cook up Spaghetti Squash, zucchini noodles. Gluten-free noodles are also a delicious option.</li>
+    </ol>
+
+     
+
+     <!-- Two Toggle Buttons -->
+    <div class="toggle-buttons">
+        <button class="toggle-btn" id="ratingBtn">⭐ Rating & Reviews</button>
+
+    </div>
+    
+    <!-- Rating Panel -->
+    <div id="ratingPanel" class="info-panel">
+        <h3>⭐ Customer Rating</h3>
+        <div class="rating-stars">★★★★★</div>
+        <p><strong>4.8 out of 5 stars</strong> (based on 100 reviews)</p>
+        
+        <div class="user-reviews">
+            <h3>💬 Recent Reviews:</h3>
+            <div class="review">
+                <strong>FoodLove</strong> ⭐⭐⭐⭐⭐<br>
+                "We love this spaghetti! It is rich and hearty! My youngest son just requested it again for his birthday this week. It is always a hit!"
+            </div>
+            <div class="review">
+                <strong>Cookone</strong> ⭐⭐⭐⭐<br>
+                "The only way I ever make spaghetti now. This recipe is wonderful and so easy. Just let it simmer. My whole family, husband and 3 kids love it! Thank you for sharing"
+            </div>
+            <div class="review">
+                <strong>HappyToEat</strong> ⭐⭐⭐⭐⭐<br>
+                "Have made this recipe MANY times. LOVE!"
+            </div>
+
+             <button class="source-btn" onclick="window.open('https://lilluna.com/spaghetti-recipe/', '_blank')">
+        Source & Citation
+    </button>
+            
+        
+            
+        </div>
+    </div>
+
+     
+    
+    <a href="index.html" class="back-link">← Back to All Recipes</a>
+</div>
+
+<script>
+    // jQuery toggle functionality for rating and history panels
+    $(document).ready(function(){
+        // Rating button toggle
+        $("#ratingBtn").click(function(){
+            $("#ratingPanel").slideToggle("fast");
+            // Optional: Close other panel when opening this one
+            // if ($("#historyPanel").is(":visible")) {
+            //     $("#historyPanel").slideUp("fast");
+            // }
+        });
+        
+        // History button toggle
+        $("#historyBtn").click(function(){
+            $("#historyPanel").slideToggle("fast");
+            // Optional: Close other panel when opening this one
+            // if ($("#ratingPanel").is(":visible")) {
+            //     $("#ratingPanel").slideUp("fast");
+            // }
+        });
+    });
+</script>
+ <!-- FLEX LAYOUT for back to top button -->
+        <div class="back-to-top-section">
+            <button class="back-to-top-btn" onclick="scrollToTop()">↑ Back to Top ↑</button>
+        </div>
+        
+        <footer>
+            <p>© 2026 Food Recipes yingxin liang</p>
+        </footer>
+</body>
+</html>
